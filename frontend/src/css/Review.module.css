@@ -1,0 +1,24 @@
+.Review{
+    display: block;
+}
+.reviewBlock{
+    background-color: #185da2;
+    width: 58vw;
+    margin-left: 15vw;
+    padding: 2vw;
+}
+.pic{
+    height: 20vh;
+    object-fit: contain;
+    margin-left: 20vw;
+}
+.reviewBlock h1{
+    text-align: center;
+}
+.rating{
+    font-size: 4vh;
+    text-align: center;
+}
+.rating .dis{
+    margin-left: 1vw;
+}

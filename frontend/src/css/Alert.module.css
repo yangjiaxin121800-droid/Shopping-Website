@@ -1,0 +1,159 @@
+.confirmDelete{
+    position: absolute;
+    background-color: white;
+    width: 30vw;
+    height: 30vh;
+    top: 42vh;
+    left: 20vw;
+    padding: 3vh;
+    border-radius: 10%;
+    border: solid 2px rgb(51, 76, 118);
+    /* display: none; */
+  }
+  .confirmDelete h3{
+    height: 8vh;
+    font-size: 5vh;
+    margin: 0;
+    
+  }
+  .confirmClose{
+    height: 5vh;
+    float: right;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .ConfirmDetail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3vw;
+    /*  */
+    grid-template-rows: auto auto; 
+    align-items: center; 
+    justify-items: center; 
+    gap: 2vh; 
+  }
+  .ConfirmDetail p{
+    grid-column: span 2;
+    font-size: 3vh;
+    background-color: #eff1ffc3;
+    max-height: 15vh; 
+    padding-left: 1vw;
+    border-radius: 15%;
+    overflow-y: auto; 
+  }
+  .ConfirmDetail p::-webkit-scrollbar {
+    width: 0.8vw; 
+}
+.ConfirmDetail p::-webkit-scrollbar-thumb {
+  background-color: rgba(72, 116, 174, 0.7); 
+  border-radius: 4px; 
+}
+
+.ConfirmDetail p::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(72, 116, 174, 1);
+}
+
+.ConfirmDetail p::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); 
+  border-radius: 0.4vw;
+}
+  .ConfirmDetail button{
+
+    grid-column: span 2;
+    width: auto; 
+    padding: 0 2vw; 
+    font-size: 3vh; 
+    height: 5vh; 
+    margin: 0; 
+    /* height: 5vh;
+    font-size: 3vh;
+    width: 8vw;
+    margin-left: 12vw;
+     */
+  }
+  .ConfirmDelete{
+    background-color: #d82906;
+  }
+  .DeleteCom{
+    top: 30vh;
+    left: 30vw;
+    position: fixed;
+    background-color: white;
+    width: 30vw;
+    height: 30vh;
+    padding: 3vh;
+    border-radius: 10%;
+    border: solid 2px rgb(51, 76, 118);
+    /* display: none; */
+  }
+  .DeleteCom h3{
+    height: 8vh;
+    font-size: 5vh;
+    margin: 0;
+  }
+  #DeleteCom{
+    background-color: #d82906;
+  }
+  .deleteback{
+    height: 5vh;
+    font-size: 3vh;
+    width: 8vw;
+    margin-left: 2vw;
+  }
+
+  /* Pad responsive */
+@media (max-width: 1024px) {
+  .DeleteCom {
+      width: 40vw;
+      height: auto;
+      top: 35vh;
+      left: 30vw;
+      padding: 2vh;
+  }
+
+  .DeleteCom h3 {
+      font-size: 4vh;
+  }
+
+  .confirmClose {
+      height: 4vh;
+  }
+
+  .ConfirmDetail p {
+      font-size: 2.5vh;
+  }
+
+  .ConfirmDetail button {
+      width: 15vw;
+      font-size: 2.5vh;
+  }
+}
+
+/* phone */
+@media (max-width: 768px) {
+  .DeleteCom {
+      width: 80vw;
+      height: auto;
+      top: 20vh;
+      left: 10vw;
+      padding: 2vh;
+  }
+
+  .DeleteCom h3 {
+      font-size: 3.5vh;
+  }
+
+  .confirmClose {
+      height: 3.5vh;
+  }
+
+  .ConfirmDetail p {
+      font-size: 2.2vh;
+      padding: 1vh;
+  }
+
+  .ConfirmDetail button {
+      width: 25vw;
+      font-size: 2vh;
+  }
+}

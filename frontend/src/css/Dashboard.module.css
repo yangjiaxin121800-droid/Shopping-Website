@@ -1,0 +1,497 @@
+.dashboard{
+    display: grid;
+    grid-template-columns: 15vw 84vw;
+    margin-top: 0;
+    padding: 0;
+    height: 100vh;
+    grid-column-gap: 1vw;
+}
+
+@media (max-width: 1024px) {
+  .dashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .LeftNav{
+    width: 80%;
+}
+}
+
+/* left part */
+.LeftNav{
+    background-color: #185da2;
+    height: 100vh;
+}
+.LeftNav a{
+    display: block;
+    border: none;
+    text-align: center;
+    color: white;
+    outline: none;
+}
+.LeftNav h1{
+    border-bottom: white 1px solid;
+    padding-bottom: 2vh;
+    margin-bottom: 1vh;
+}
+.LeftNav .manage{
+    padding: 0;
+    margin: 0;
+    color: white;
+    padding-left: 1vw;
+    font-size: 3vh;
+}
+.LeftNav ul{
+    padding: 0;
+}
+.LeftNav ul li{
+    color: white;
+    /* width: 14vw; */
+    list-style: none;
+    cursor: pointer;
+    height: 5vh;
+    margin-left: 1vw;
+    line-height: 5vh;
+    padding-left: 0.5vw;
+    margin-right: 1vw;
+}
+.LeftNav ul li:hover{
+    background-color: rgba(255, 255, 255, 0.83);
+    color: #0d2a47;
+}
+/* right part */
+.Right{
+    background-color: #185da2;
+    height: 100vh;
+    padding-left: 0.5vw;
+    /* overflow: hidden; */
+}
+.Right h2{
+    color: white;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.Right .adminName{
+    padding: 0;
+    margin: 0;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 1vw;
+    border-bottom: white 1px solid;
+}
+.content{
+    background-color: white;
+    margin-top: 1vh;
+    width: 99%;
+    height: 85vh;
+}
+/* about user part */
+.userContent{
+    display: grid;
+    grid-template-columns: 15vw 30vw 37vw ;
+    background-color: white;
+    height: 100%;
+}
+.UserList{
+    height: 100%;
+    border-right: #185da2 2px solid;
+}
+.UserList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.UserList h2{
+    background-color: rgb(97, 138, 207);
+    /* height: 3vh; */
+    padding: 0.5vh;
+    font-size: 3vh;
+    margin: 0;
+  }
+.UserList ul li {
+  /* padding: 0.5em; */
+  cursor: pointer;
+  height: 6vh;
+  text-align: center;
+  border-bottom: solid rgb(51, 76, 118) 1px;
+  /* border-top: solid rgb(51, 76, 118) 1px; */
+  margin-top: 3px;
+}
+.UserList ul li:hover{
+  box-shadow: 0 2px rgba(51, 76, 118, 0.916);
+  border: solid 2px #3f71af;
+  /* background-color: rgba(97, 137, 207, 0.888);
+  color: white; */
+}
+.UserList ul li span{
+  font-size: 2vh;
+}
+.UserList ul li p{
+  margin: 0;
+  margin-top: 2px;
+  font-size: 2vh;
+  width: 19vw;
+  text-align: center;
+}
+.UserList ul li img{
+  float: right;
+  height: 3vh;
+  object-fit: contain;
+  margin-right: 0.5vw;
+  z-index: 5;
+}
+/* user detail */
+.userDetail{
+    border-right: #185da2 2px solid;
+    padding-left: 1vw;
+}
+.userDetail h2{
+    padding: 0.5vh;
+    font-size: 3vh;
+    margin: 0;
+    background-color: rgb(97, 138, 207);
+}
+.showDetail{
+    display: grid;
+    grid-template-columns: 30vw;
+    grid-template-rows: repeat(9,5vh);
+    background-color: #ebe8e82c;
+    padding-left: 1vw;
+    /* height: 80vh; */
+    /* display: none; */
+  } 
+  button:hover{
+    background-color: #d82906;
+  }
+  .btnEdit{
+    width: 15vw;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-left: 1vw;
+  }
+  .EditInfo{
+    display: grid;
+    grid-template-columns: 6VW 14VW;
+    grid-template-rows: repeat(10,5vh);
+    line-height: 5vh;
+    /* background-color: #ffffffcc; */
+    border: none;
+    width: 100%;
+    gap: 1vh;
+    padding-left: 1vw;
+    /* height: 80vh; */
+    /* display: none; */
+  }
+  .formgroup{
+    display: grid;
+    grid-template-columns: 6VW 14VW;
+    grid-template-rows: 5vh;
+    /* line-height: 5vh; */
+    margin-bottom: 2vh;
+  }
+  /* port part */
+  
+
+
+  /* about product manage */
+  .proContent{
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 23vw 55vw;
+  }
+  .proContent .search{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: stretch;
+  }
+  .proContent .search select{
+    margin: 0;
+  }
+  .proContent fieldset{
+    border: solid 1.6px rgb(51, 76, 118);
+  }
+  .proContent .filterIcon{
+    object-fit: contain;
+    background-color: rgb(51, 76, 118);
+    height: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    cursor: pointer;
+  }
+  .proContent aside {
+     
+     padding: 10px;
+     padding-top: 0;
+     height: 83.5vh;
+  }
+  .proContent .interface{
+    height: 65vh;
+  }
+  .proContent .showPic{
+    height: 30vh;
+    width: 30vw;
+    object-fit: contain;
+    background-color: white;
+    line-height: 30vh;
+    font-weight: 500;
+    font-size: 4vh;
+    padding-left: 1vw;
+  }
+  .proContent .detail{
+    height: 77vh;
+  }
+  .proContent .ComputerList{
+    padding: 0;
+    height: 55vh;
+    overflow-y: scroll;
+   
+  }
+  .proContent  .ComputerList li{
+    list-style: none;
+    background-color: white;
+    padding: 0.6vh;
+    padding-left: 0.9vh;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    border-bottom: solid rgb(51, 76, 118) 2px;
+    cursor: pointer;
+  }
+  .proContent .ComputerList li .DeleteCom{
+   height: 4vh;
+   float: right;
+   object-fit: contain;
+   cursor: pointer;
+ }
+ .proContent .ComputerList li:hover{
+    /* border: solid rgb(51, 76, 118) 2px; */
+    box-shadow: 2px 2px rgb(51, 76, 118);
+    /* background-color: #d82906; */
+  }
+  .proContent  .ComputerList li span{
+    font-weight: bolder;
+    font-size: 2.5vh;
+  }
+  .proContent .ComputerList li p{
+    margin: 0;
+    padding-left: 2vw;
+    font-size: 2vh;
+    margin-top: 1vh;
+  }
+  .proContent .computerDetails{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    padding-left: 1vw;
+    grid-template-rows: repeat(6,4vh);
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+  }
+  .proContent section {
+     padding: 20px;
+     background-color: var(--box-bg-color);
+     height: 83.5vh;
+  }
+  .proContent  select,  .proContent input,  .proContent button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px;
+    outline: none;
+ }
+ .detail h3{
+    padding-left: 2vw;
+ }
+ .detail .btnDelete{
+    margin-left: 4vw;
+    width: 7vw;
+    float: left;
+ }
+
+ /* fpr order manage */
+ .OrderPart{
+  display: grid;
+  grid-template-columns: 30vw 55vw;
+ }
+ .OrderPart .orderList{
+  background-color: white;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* height: 90%; */
+ }
+ .OrderPart .Order{
+  display: grid;
+  grid-template-columns: 15vw 15vw;
+  border: 1px solid #3f71af;
+  grid-template-rows: 6vh;
+ }
+ .OrderPart .orderLeft{
+  padding-left: 10px;
+  line-height: 6vh;
+ }
+ .OrderPart .orderRight{
+  text-align: center;
+ }
+ .OrderPart .orderRight button{
+    /* padding: 10px; */
+    display: inline;
+    float: left;
+    width: 6vw;
+    height: 4vh;
+    font-size: 2vh;
+    margin: 1vh;
+ }
+ .OrderPart .OrderDetail h2{
+  background-color: #3f71af;
+  margin: 0;
+  padding: 0;
+  height: 6vh;
+  line-height: 6vh;
+ }
+ .OrderPart .OrderDetail h3{
+  margin: 0;
+  padding: 0;
+ }
+ .OrderPart .detail{
+  display: grid;
+  grid-template-columns: 35vw 17vw;
+ }
+ .OrderPart .historyItem{
+  width: 33vw;
+  display: grid;
+  grid-template-columns: 12vw 20vw;
+  /* padding: 10px; */
+  margin-top: 5px;
+  margin-left: 10px;
+  border: #185da2 2px solid;
+  /* border-radius: 5%; */
+}
+.OrderPart .Picbox img{
+  height: 10vh;
+  object-fit: contain;
+}
+.OrderPart .introduce p{
+  padding: 0;
+  margin: 0;
+
+}
+.OrderPart .Picbox,.introduce{
+  border-bottom: #185da2 1px solid;
+}
+.OrderPart .price{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.OrderPart .OrderDetailRight{
+  background-color: white;
+  margin-top: 2vh;
+  padding-left: 2vw;
+}
+.OrderPart .product{
+  overflow-y: scroll;
+  height: 78vh;
+}
+.address,.pay {
+  /* padding-left: 0.5vw; */
+  border-bottom: 2px solid #185da2;
+}
+.stockInput{
+  height: 2vh;
+}
+/* Tablet devices (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  /* Adjust the layout of the dashboard */
+  .dashboard {
+      grid-template-columns: 1fr 3fr;
+  }
+
+  /* Adjust the product content layout */
+  .proContent {
+      grid-template-columns: 1fr 2fr;
+  }
+
+  /* Adjust left navigation */
+  .LeftNav {
+      width: 20vw;
+  }
+
+  /* Adjust proContent for better tablet viewing */
+  .proContent .ComputerList li {
+      font-size: 2.5vh;
+      padding: 1.5vh;
+  }
+
+  .proContent .showPic {
+      width: 40vw; /* Slightly smaller for tablet */
+      height: 25vh;
+  }
+
+  /* Adjust search section for better tablet view */
+  .proContent .search {
+      grid-template-columns: 2fr 1fr; /* Make search and filter aligned properly */
+  }
+}
+
+/* Desktop (above 1024px) */
+@media (min-width: 1024px) {
+  .dashboard {
+      grid-template-columns: 15vw 84vw; /* Default layout for large screens */
+  }
+
+  /* Desktop proContent layout */
+  .proContent {
+      grid-template-columns: 23vw 55vw;
+  }
+}
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  /* Adjust dashboard layout */
+  .dashboard {
+      grid-template-columns: 1fr; /* Stack left and right sections */
+  }
+
+  /* Adjust proContent layout */
+  .proContent {
+      grid-template-columns: 1fr; /* Stack aside and section */
+  }
+
+  /* Adjust left navigation (LeftNav) */
+  .LeftNav {
+      display: none; /* Hide for mobile */
+  }
+
+  /* Adjust product list layout */
+  .proContent .ComputerList li {
+      font-size: 3vh;
+      padding: 2vh;
+      text-align: center;
+  }
+
+  .proContent .showPic {
+      height: 20vh;
+      width: 100%; /* Make it responsive */
+  }
+
+  .proContent .detail {
+      padding: 10px;
+  }
+
+  /* Adjust search section */
+  .proContent .search {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Stack select and filter */
+  }
+
+  .proContent .search select {
+      margin: 0;
+      width: 100%; /* Make it responsive */
+  }
+
+  /* Adjust form fields */
+  .proContent input, .proContent select, .proContent button {
+      width: 100%; /* Full-width buttons and inputs */
+      margin: 10px 0;
+  }
+}

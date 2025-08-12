@@ -1,0 +1,287 @@
+
+.AppHeader {
+    background-color: #1a459c;
+    width: 100vw;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    color: white;
+    z-index: 9;
+  }
+  .AppHeader h1 a, .AppHeader .search{
+    float: left;
+    color: white;
+  }
+  .AppHeader h1{
+    padding: 0;
+    margin: 0;
+    line-height: 12vh;
+    margin-left: 1vw;
+  }
+.Log{
+    width: 50vw;
+    height: 50vh;
+    margin-left: 25vw;
+    margin-top: 5vh;
+    /* background-color: antiquewhite; */
+    display: grid;
+    grid-template-columns: 7vw 37vw;
+
+}
+.IdLog h1{
+  font-size: 3vw;
+}
+/* initially don't show email log */
+.EmailLog{
+    display: none;
+    background-color: none;
+}
+/* user display none */
+
+.Logway{
+    padding: 0;
+    padding-top: 5vh;
+}
+.Logway li{
+    height: 7vh;
+    font-size: 3vh;
+    line-height: 7vh;
+    text-align: left;
+    list-style: none;
+    padding-left: 1vw;
+    background-color: aliceblue;
+    margin-left: 0;
+    margin-bottom: 2vh;
+    border-radius: 10% 0 0 10%;
+    cursor: pointer;
+}
+.Logway li:hover{
+    border-color: #185da2; 
+    border-style: solid;  
+    border-width: 2px 0px 2px 2px; 
+}
+form{
+    padding: 2vh;
+    width: 37vw;
+    border: 2px solid #185da2;
+    border-radius: 10%;
+}
+.formgroup{
+    display: grid;
+    grid-template-columns: 10vw 30vw;
+    grid-template-rows: 8vh;
+    font-size: 3vh;
+    line-height: 8vh;
+    margin-top: 3vh;
+}
+input{
+    width: 20vw;
+}
+.formcheck{
+    margin-top: 3vh;
+    color: #185da2;
+    text-decoration: underline;
+    padding-left: 1vw;
+}
+.btn{
+    width: 15vw;
+    height: 7vh;
+    line-height: 7vh;
+    font-size: 4vh;
+    text-align: center;
+    border-radius: 10%;
+    color: white;
+    background-color: #185da2;
+    margin-top: 4vh;
+    margin-left: 12vw;
+    cursor: pointer;
+}
+/* about checkcode and send class */
+.checkIt{
+    display: grid;
+    grid-template-columns: 13vw 7vw;
+    column-gap: 3px;
+}
+.checkcode{
+    width: 13vw;
+}
+.send{
+    cursor: pointer;
+    width: 7vw;
+    background-color: #185da2;
+    color: white;
+    text-align: center;
+}
+form h1{
+    text-align: center;
+    color: #185da2;
+}
+/* register */
+.register{
+    margin-left: 25vw;
+    margin-top: 10vh;
+}
+.register .formgroup{
+    grid-template-rows: 7vh;
+}
+.register h1{
+    padding: 0;
+    margin: 0;
+}
+.register .formgroup{
+    grid-template-rows: 5vh;
+    line-height: 5vh;
+}
+.register .formcheck{
+    margin-top: 1vh;
+}
+.register .btn{
+    margin-top: 2vh;
+}
+main{
+  margin-top: 12vh;
+    padding: 5px;
+    height: 70vh;
+}
+
+/* 响应式：iPad 屏幕（宽度 ≤ 1024px） */
+@media (max-width: 1024px) {
+    .AppHeader {
+        height: 10vh;
+      }
+    
+      .AppHeader h1 {
+        font-size: 3vh;
+        line-height: 10vh;
+        margin-left: 2vw;
+      }
+    
+    .Log {
+      width: 80vw;
+      height: auto;
+      margin-left: 10vw;
+      margin-top: 10vh;
+      display: flex;
+      flex-direction: column; /* 改为垂直布局 */
+      align-items: center;
+    }
+    .IdLog h1{
+      font-size: 5vh;
+    }
+    form {
+      width: 80vw;
+      margin-top: 3vh;
+      border-radius: 5%;
+    }
+  
+    .formgroup {
+        grid-template-columns: 20vw 55vw;
+      font-size: 2.5vh;
+      margin-top: 2vh;
+    }
+  
+    input {
+      width: 100%; /* 全宽 */
+    }
+  
+    .btn {
+      width: 70%;
+      margin-left: 15%;
+      font-size: 3vh;
+    }
+  
+    .formcheck {
+      margin-top: 2vh;
+      text-align: center;
+      font-size: 2vh;
+    }
+    .register {
+        width: 80vw;
+      height: auto;
+      margin-left: 6vw;
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: column; /* 改为垂直布局 */
+      align-items: center;
+      }
+    
+    .register h1 {
+        font-size: 3vh;
+        text-align: center;
+      }
+  }
+  
+  /* 响应式：手机屏幕（宽度 ≤ 768px） */
+  @media (max-width: 768px) {
+
+    .AppHeader {
+      height: 10vh;
+      width: 100%;
+    }
+  
+    .AppHeader h1 {
+      font-size: 3vh;
+      line-height: 10vh;
+      margin-left: 2vw;
+    }
+    
+  
+    
+    main{
+        display: inline;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        height: 80vh;
+    }
+    /* */
+    .IdLog h1{
+      font-size: 5vh;
+    }
+  
+    form {
+      width: 90%;
+      padding: 2vh 5vw;
+      border-radius: 5%;
+      font-size: 2vh;
+    }
+  
+    .formgroup {
+      grid-template-columns: 100%; /* 垂直布局 */
+      font-size: 2vh;
+      line-height: 6vh;
+      margin-top: 2vh;
+    }
+  
+    .formgroup label {
+      margin-bottom: 0.5vh;
+    }
+  
+    input {
+      width: 100%; /* 占满宽度 */
+      height: 5vh;
+    }
+  
+    .btn {
+      width: 100%;
+      font-size: 2.5vh;
+      line-height: 6vh;
+      height: 6vh;
+      margin-left: 0;
+    }
+  
+    .formcheck {
+      margin-top: 2vh;
+      text-align: center;
+      font-size: 1.8vh;
+    }
+    .register {
+        margin-left: 5vw;
+        margin-top: 12vh;
+      }
+    
+    .register h1 {
+        font-size: 3vh;
+        text-align: center;
+      }
+  }

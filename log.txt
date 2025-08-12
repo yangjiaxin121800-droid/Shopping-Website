@@ -1,0 +1,157 @@
+commit 75a8a8e41e3038f30bb040b41aba1772becda25c
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 20:06:52 2024 -0500
+
+    implement auth check between user and admin
+
+commit 748851deadcb48776bceca306bf97d9219a22812
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 19:26:29 2024 -0500
+
+    fix cors errors
+
+commit 50ba5e3f389ccea2a7bc7b95c5a67c8144a25138
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 18:58:11 2024 -0500
+
+    enable JWT and bcrypt for security
+
+commit 1840c1666d512abe767a29864b54c364f127d850
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 18:52:19 2024 -0500
+
+    fix several display errors
+
+commit 603eab9daee636425d2a189a7f57d6f75cccea8b
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 18:40:02 2024 -0500
+
+    add responsive design to pages
+
+commit 423914824ced5bf4b2c062f52b7c3e45bd9a1ca8
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 17:26:18 2024 -0500
+
+    update dependencies
+
+commit 4cc5254df1ece4051338699afac37ea55068f2f9
+Merge: f495059 bae71ab
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 17:18:47 2024 -0500
+
+    Merge branch 'frontend'
+
+commit bae71abb181df50089d28e03e65fa7a5b1a93804
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 17:10:07 2024 -0500
+
+    modify interface parameters
+
+commit 93c43b6048f2e0dd0c55fe36b984a4efb6d81b44
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 17:09:00 2024 -0500
+
+    fix several bugs about display
+
+commit 4f4a262639bd232c6721f4a3c74b68d9f26fae64
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 16:13:36 2024 -0500
+
+    add token to all requests
+
+commit 56a0ccbe77633fd9fd5de3fd4f47be3786f5f0d5
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 13:48:12 2024 -0500
+
+    update frontend js files
+
+commit fea9cba858f46d8553a2f0992f7a938f2b031150
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 12:06:29 2024 -0500
+
+    connect to cloud database
+
+commit 6587c3466209c0fa29d92c4329e594052dfea616
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Dec 5 01:12:52 2024 -0500
+
+    fix several bugs, jwt is running for security now
+
+commit 4076d5f4d5f3974c1ee716bc4920797b6dd3c9c0
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Wed Dec 4 20:37:59 2024 -0500
+
+    Modified the implementation of deleting products, now the product information will not be removed
+
+commit 8daa01f80bd00e2878e353cf0b4d5dda7faaf501
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Wed Dec 4 19:35:51 2024 -0500
+
+    fix bugs about getting order details and check payment validation
+
+commit 311f249c1a73f179a3783ff9a7b9752a6b77fa39
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Wed Dec 4 18:47:21 2024 -0500
+
+    implement admin functions
+
+commit d7dfe9dbda91458b39724e8be8de8b4cf0e0caae
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Wed Dec 4 15:29:17 2024 -0500
+
+    implemented all user functions
+
+commit 35e18bb9743a5d768c288f4dc45d4dee28dcdf1a
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Nov 28 23:02:18 2024 -0500
+
+    implement login and register function
+
+commit 6325891cc0342726cb5065f3e0102615e940fc61
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Nov 28 17:28:23 2024 -0500
+
+    pass the test of connection to front end
+
+commit f908cafe13e3d392947879ed20daceec8077ddf2
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Thu Nov 28 12:02:51 2024 -0500
+
+    add jwt authorization
+
+commit f4950597b95432b129a8e89dae78b17a47f24dda
+Merge: 687090a 6685f61
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Tue Nov 26 11:28:05 2024 -0500
+
+    Merge branch 'main' of https://github.com/W-Bu-coder/project-assignment-4-group-2
+
+commit 687090ae8404e6fec2b5c2e17390d6ffe4d4875c
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Tue Nov 26 11:24:58 2024 -0500
+
+    update backend structure
+
+commit 65c0b38f92740aa3e57da5af1419d25d5bfe751a
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Mon Nov 11 10:24:38 2024 -0500
+
+    clarify the format of front-end interaction
+
+commit 6685f615f36c17b42c746c33548f0fdc6e01e403
+Author: W-Bu-coder <wbu2@uwo.ca>
+Date:   Mon Nov 11 00:14:52 2024 -0500
+
+    Update README.md file
+
+commit 7b45e9d0116c555667fc25726717b409fb89f8fa
+Author: Wenxiao <buwenxiao@outlook.com>
+Date:   Mon Nov 11 00:04:42 2024 -0500
+
+    build an example of frontend, backend and communication.
+
+commit 1a925d5252bea1f9b8fd63bea37f751ad6ee8ad4
+Author: W-Bu-coder <wbu2@uwo.ca>
+Date:   Sun Nov 10 16:02:48 2024 -0500
+
+    Initial commit

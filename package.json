@@ -1,0 +1,21 @@
+{
+  "name": "project-assignment-4-group-2",
+  "version": "1.0.0",
+  "description": "Lab Assignment #4 – Project - Online Computer Store Web Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Group 2",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.1",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.4",
+    "pnpm": "^9.12.3",
+    "react": "^18.3.1"
+  }
+}

@@ -1,0 +1,180 @@
+.profileMain{
+    display: grid;
+    grid-template-columns: 19vw 73vw;
+    grid-column-gap: 1vw;
+    /* background-color: aliceblue; */
+}
+
+.profileMain .LeftBar{
+    width: 18vw;
+    margin-left: 1vw;
+    /* background-color: antiquewhite; */
+    border: #185da2 solid 2px;
+}
+.profileMain .LeftBar h2{
+    text-align: center;
+    height: 7vh;
+    line-height: 7vh;
+    background-color: #185da2;
+    color: white;
+    margin: 0;
+}
+.profileMain ul{
+    /* background-color: antiquewhite; */
+    padding-top: 0;
+    margin-top: 0;
+}
+.profileMain ul li{
+    margin: 0;
+    border-radius: 0;
+    height: 6vh;
+    line-height: 6vh;
+    border-bottom: solid rgb(51, 76, 118) 1px;
+    /* border-top: solid rgb(51, 76, 118) 1px; */
+    margin-top: 3px;
+}
+.profileMain ul li:hover{
+    box-shadow: 0 2px rgba(51, 76, 118, 0.916);
+    border: solid 2px #3f71af;
+    /* background-color: rgba(97, 137, 207, 0.888);
+    color: white; */
+  }
+.profileMain .RightContent{
+    background-color: aliceblue;
+    border: solid 2px #3f71af;
+    padding: 2vw;
+}
+
+@media (max-width: 1024px) {
+  .profileMain{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.profileMain .LeftBar {
+  display: block;
+  min-height: 200px;
+  width: 80%;
+  overflow: hidden;
+}
+}
+/* initially expect info all display none */
+.information,.Change,.All,.ShowContent{
+    background-color: white;
+    padding: 2vh;
+    height: 70vh;
+}
+.RightContent h1{
+    margin: 0;
+    padding: 0;
+}
+.Change h1{
+    margin-bottom: 3vh;
+}
+.showDetail{
+    margin-top: 10px;
+    display: grid;
+    /* grid-template-columns: 30vw; */
+    grid-template-rows: repeat(9,5vh);
+    gap: 1vh;
+    background-color: #ebe8e82c;
+    padding-left: 1vw;
+    /* height: 80vh; */
+    /* display: none; */
+  } 
+  button{
+    background-color: #185da2;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    font-size: 3vh;
+  }
+  button:hover{
+    background-color: #d82906;
+  }
+  .btnEdit{
+    width: 15vw;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-left: 1vw;
+  }
+  .EditInfo{
+    display: grid;
+    grid-template-columns: 8VW 20VW;
+    grid-template-rows: repeat(10,5vh);
+    line-height: 5vh;
+    background-color: #ffffffcc;
+    gap: 1vh;
+    padding-left: 4vw;
+    /* height: 80vh; */
+    /* display: none; */
+  }
+  .formgroup{
+    display: grid;
+    grid-template-columns: 8VW 20VW;
+    grid-template-rows: 5vh;
+    /* line-height: 5vh; */
+    margin-bottom: 2vh;
+  }
+/* my cart part */
+.ShowContent{
+    display: grid;
+    grid-template-columns: 54vw 20vw;
+    grid-template-rows: 6vh 60vh;
+}
+.ShowContent h1{
+    grid-column: span 2;
+}
+.LeftPro{
+    overflow-y: scroll;
+}
+.buybtn{
+    margin-top: 2vh;
+    margin-left: 3vw;
+    height: 5vh;
+}
+/* for the history part */
+.PurchaseItem{
+    border: #185da2 1px solid;
+    
+}
+.title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #d7ebffb6;
+}
+.order{
+    text-align: left;
+}
+.orderDate{
+    text-align: right;
+}
+.OrderContent{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 8vh;
+}
+.OrderContent button{
+    height: 5vh;
+    margin-top: 1vh;
+    margin-right: 1.5vw;
+    border-radius: 15%;
+    float: right;
+}
+.OrderContent button a{
+    color: white;
+}
+
+@media (max-width: 1024px) {
+  .OrderContent button{
+    font-size: 0.8em;
+  }
+}
+
+.buybtn a {
+    color: white;
+}

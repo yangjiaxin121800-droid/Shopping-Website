@@ -1,0 +1,91 @@
+.History{
+    display: grid;
+    grid-template-columns: 68vw 26vw;
+    height: 82vh;
+}
+.Left{
+    background-color: aliceblue;
+    margin-left: 4vw;
+}
+.Right{
+    background-color: rgba(237, 241, 248, 0.63);
+}
+/* history title */
+.title{
+    display: grid;
+    grid-template-columns: 10vw 57vw;
+    font-size: 3vh;
+    height: 5vh;
+    line-height: 5vh;
+    padding-left: 10px;
+    padding-top: 5px;
+    /* padding-bottom: 5px; */
+}
+.content{
+    background-color: white;
+    margin: 10px;
+    height: 72vh;
+    overflow-y: scroll;
+}
+.Right h3{
+    margin: 0;
+    margin-top: 0.5vh;
+    padding: 0;
+    padding-left: 0.5vw;
+}
+.address,.pay {
+    padding-left: 0.5vw;
+    border-bottom: 2px solid #185da2;
+}
+.payment span{
+    margin-right: 5px;
+}
+.pay{
+    padding-bottom: 0.5vh;
+}
+.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.price strong{
+    text-align: left;
+    margin-left: 0.5vw;
+}
+.price span{
+    text-align: right;
+    margin-right: 1.5vw;
+}
+.totalprice{
+    text-align: right;
+    margin-right: 1.5vw !important;
+}
+/* about the content of history item */
+.titleItem{
+    font-size: 3vh;
+    padding-left: 1vw;
+    padding-bottom: 5px;
+    border-bottom: #185da2 1px solid;
+}
+.historyItem{
+    width: 59vw;
+    display: grid;
+    grid-template-columns: 20vw 38vw;
+    padding: 10px;
+    margin-left: 10px;
+    border: #185da2 2px solid;
+    border-radius: 5%;
+}
+.Picbox img{
+    height: 18vh;
+    object-fit: contain;
+}
+.Picbox,.introduce{
+    border-bottom: #185da2 1px solid;
+}
+.historyItem a{
+    grid-column: span 2;
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
